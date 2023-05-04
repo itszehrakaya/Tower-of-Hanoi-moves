@@ -13,7 +13,6 @@ def hanoi(n, source, auxiliary, target):
         # Move n-1 disks from source peg to auxiliary peg
         hanoi(n-1, source, target, auxiliary)
         
-        # Print the move
         print(f"Move disk {n} from {source} to {target}")
         
         # Move n-1 disks from auxiliary peg to target peg
