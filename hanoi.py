@@ -2,14 +2,12 @@ def hanoi(n, source, auxiliary, target):
     """
     Recursive function to solve Tower of Hanoi puzzle and list all the moves.
 
-    Args:
-    n (int): Number of disks.
-    source (str): Source peg.
-    auxiliary (str): Auxiliary peg.
-    target (str): Target peg.
+        n (int): Number of disks.
+        source (str): Source peg.
+        auxiliary (str): Auxiliary peg.
+        target (str): Target peg.
 
-    Returns:
-    None
+
     """
     if n > 0:
         # Move n-1 disks from source peg to auxiliary peg
@@ -21,7 +19,7 @@ def hanoi(n, source, auxiliary, target):
         # Move n-1 disks from auxiliary peg to target peg
         hanoi(n-1, auxiliary, source, target)
 
-# Driver code
+
 if __name__ == "__main__":
     n = int(input("Enter the number of disks: "))
     print(f"Moves to solve Tower of Hanoi with {n} disks:")
